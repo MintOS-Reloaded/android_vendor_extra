@@ -11,3 +11,5 @@ endif
 
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
+PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://github.com/nift4/Mint-OS/raw/master/ota/{device}.json
+
