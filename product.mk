@@ -13,4 +13,4 @@ endif
 PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
 PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://github.com/nift4/Mint-OS/raw/ota/{device}.json
 
-$(call inherit-product, vendor/extra/${PRODUCT_DEVICE}.mk)
+$(call inherit-product, vendor/extra/${TARGET_DEVICE}.mk)
