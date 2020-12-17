@@ -6,7 +6,8 @@ PRODUCT_COPY_FILES += \
 
 # Face Unlock
 PRODUCT_PACKAGES += \
-    FaceUnlockService
+    FaceUnlockService \
+    //vendor/extra:LineageFpg
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face.moto_unlock_service=true
