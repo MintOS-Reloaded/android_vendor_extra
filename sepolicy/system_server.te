@@ -1,1 +1,1 @@
-allow system_server data_keylayout_file:file { open read };
+allow system_server system_data_file:file { open read };
