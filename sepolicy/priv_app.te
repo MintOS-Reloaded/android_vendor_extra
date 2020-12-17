@@ -1,1 +1,1 @@
-allow priv_app system_data_file:file { open read write };
+allow priv_app system_data_file:file { open read };
