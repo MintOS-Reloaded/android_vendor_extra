@@ -1,5 +1,2 @@
 # HID Gadget
 /dev/hidg[0-9]*          u:object_r:hid_gadget_device:s0
-
-# Keylayouts
-/data/system/devices/keychars/uinput-fpc.kcm u:object_r:vendor_keylayout_file:s0
