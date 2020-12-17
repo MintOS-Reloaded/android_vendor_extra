@@ -1,9 +1,9 @@
 android_app_import {
 	name: "LineageFpg",
-	owner: "nift4",
 	apk: "app-release.apk",
 	dex_preopt: {
 		enabled: false,
 	},
 	privileged: true,
+	certificate: "PRESIGNED",
 }
