@@ -1,2 +1,2 @@
 type hid_gadget_device, dev_type, mlstrustedobject;
-type data_keylayout_file, file_type, mlstrustedobject;
+type data_keylayout_file, data_file_type, mlstrustedobject;
