@@ -5,7 +5,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
 
-$(call inherit-product, vendor/extra/${device}.mk)
+include vendor/extra/${device}.mk
 
 ifeq (${WITH_GAPPS},true)
 ifeq ($(TARGET_GAPPS_ARCH),)
