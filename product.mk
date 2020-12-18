@@ -5,6 +5,8 @@ PRODUCT_PROPERTY_OVERRIDES := \
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
 
+TARGET_UNOFFICIAL_BUILD_ID := MINT
+
 include vendor/extra/${device}.mk
 
 ifeq (${WITH_GAPPS},true)
