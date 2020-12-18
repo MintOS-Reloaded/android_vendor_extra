@@ -12,3 +12,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face.moto_unlock_service=true
     
+# GApps
+TARGET_GAPPS_ARCH := arm64
