@@ -59,4 +59,10 @@ void vendor_load_properties()
 {
     // fingerprint
     property_override_triple("ro.build.fingerprint", "ro.system.build.fingerprint", "ro.vendor.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+    property_override("ro.bootimage.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
+    // Say to Google Always Green and locked other it dont pass Saftynet on new devices
+    property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.boot.flash.locked", "1");
+}
+
 }
