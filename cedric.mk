@@ -16,4 +16,4 @@ TARGET_GAPPS_ARCH := arm64
 
 # Swipelibs
 PRODUCT_COPY_FILES += \
-    vendor/extra/libjni_latinimegoogle.so:$(TARGET_COPY_OUT_SYSTEM/lib64/libjni_latinimegoogle.so
+    vendor/extra/libjni_latinimegoogle.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjni_latinimegoogle.so
