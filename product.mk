@@ -26,7 +26,10 @@ PRODUCT_PACKAGES += \
     com.google.android.dialer.support
 endif
 
-$(call inherit-product, vendor/gapps/common-blobs.mk)
+$(call inherit-product, vendor/gapps/product/blobs/product_blobs.mk)
+$(call inherit-product, vendor/gapps/system/blobs/system_blobs.mk)
+$(call inherit-product, vendor/gapps/system_ext/blobs/system-ext_blobs.mk)
+
 
 ifeq ($(TARGET_INCLUDE_STOCK_ARCORE),true)
 PRODUCT_PACKAGES += \
