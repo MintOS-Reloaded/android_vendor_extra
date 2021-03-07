@@ -1,9 +1,0 @@
-android_app_import {
-	name: "LineageFpg",
-	apk: "app-release.apk",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	certificate: "PRESIGNED",
-}
