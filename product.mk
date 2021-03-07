@@ -45,20 +45,16 @@ PRODUCT_PACKAGES += \
 # product/app
 PRODUCT_PACKAGES += \
     CarrierMetrics \
-    DiagnosticsToolPrebuilt \
     GoogleTTS \
     GoogleContactsSyncAdapter \
-    LocationHistoryPrebuilt \
     MarkupGoogle \
-    Ornament \
     PixelThemesStub \
     PrebuiltBugle \
     SoundAmplifierPrebuilt \
     SoundPickerPrebuilt \
     TrichromeLibrary \
     TrichromeLibrary-Stub \
-    Tycho \
-    VZWAPNLib
+    Tycho
 
 # product/priv-app
 PRODUCT_PACKAGES += \
@@ -73,13 +69,8 @@ PRODUCT_PACKAGES += \
     ConnMO \
     ConnMetrics \
     DMService \
-    FilesPrebuilt \
     GoogleOneTimeInitializer \
-    MaestroPrebuilt \
     DevicePersonalizationPrebuiltPixel2020 \
-    MyVerizonServices \
-    NovaBugreportWrapper \
-    OBDM_Permissions \
     PartnerSetupPrebuilt \
     Phonesky \
     SCONE \
@@ -87,16 +78,11 @@ PRODUCT_PACKAGES += \
     ScribePrebuilt \
     SettingsIntelligenceGooglePrebuilt \
     SetupWizardPrebuilt \
-    SprintDM \
-    SprintHM \
     TetheringEntitlement \
     TurboPrebuilt \
-    USCCDM \
     Velvet \
-    VzwOmaTrigger \
     WellbeingPrebuilt \
-    WfcActivation \
-    obdm_stub
+    WfcActivation
 
 # system/app
 PRODUCT_PACKAGES += \
