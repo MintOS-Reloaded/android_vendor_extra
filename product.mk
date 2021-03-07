@@ -36,41 +36,109 @@ PRODUCT_PACKAGES += \
     arcore
 endif
 
-# System app
 PRODUCT_PACKAGES += \
+    MicropaperPrebuilt \
+    WallpapersBReel2020 \
+    PixelLiveWallpaperPrebuilt \
+    PixelWallpapers2020
+
+# product/app
+PRODUCT_PACKAGES += \
+    CarrierMetrics \
+    DiagnosticsToolPrebuilt \
+    GoogleTTS \
+    GoogleContactsSyncAdapter \
+    LocationHistoryPrebuilt \
+    MarkupGoogle \
+    Ornament \
+    PixelThemesStub \
+    PrebuiltBugle \
+    SoundAmplifierPrebuilt \
+    SoundPickerPrebuilt \
+    TrichromeLibrary \
+    TrichromeLibrary-Stub \
+    Tycho \
+    VZWAPNLib
+
+# product/priv-app
+PRODUCT_PACKAGES += \
+    AndroidAutoStubPrebuilt \
+    AndroidMigratePrebuilt \
+    AppDirectedSMSService \
+    CarrierLocation \
+    CarrierServices \
+    CarrierWifi \
+    ConfigUpdater \
+    DCMO \
+    ConnMO \
+    ConnMetrics \
+    DMService \
+    FilesPrebuilt \
+    GoogleOneTimeInitializer \
+    MaestroPrebuilt \
+    DevicePersonalizationPrebuiltPixel2020 \
+    MyVerizonServices \
+    NovaBugreportWrapper \
+    OBDM_Permissions \
+    PartnerSetupPrebuilt \
+    Phonesky \
+    SCONE \
+    SafetyHubPrebuilt \
+    ScribePrebuilt \
+    SettingsIntelligenceGooglePrebuilt \
+    SetupWizardPrebuilt \
+    SprintDM \
+    SprintHM \
+    TetheringEntitlement \
+    TurboPrebuilt \
+    USCCDM \
+    Velvet \
+    VzwOmaTrigger \
+    WellbeingPrebuilt \
+    WfcActivation \
+    obdm_stub
+
+# system/app
+PRODUCT_PACKAGES += \
+    CaptivePortalLoginGoogle \
     GoogleExtShared \
     GooglePrintRecommendationService
 
-# System priv-app
+# system/priv-app
 PRODUCT_PACKAGES += \
-    GoogleExtServicesPrebuilt
+    GooglePackageInstaller \
+    TagGoogle
 
-# Product app
+# system_ext/app
 PRODUCT_PACKAGES += \
-    GoogleContactsSyncAdapter \
-    GoogleTTS \
-    MarkupGoogle \
-    SoundPickerPrebuilt \
-    talkback \
-    WebViewGoogle
-    
-# Product priv-app
+    Flipendo
+
+# system_ext/priv-app
 PRODUCT_PACKAGES += \
-    AndroidMigratePrebuilt \
-    CarrierServices \
-    ConfigUpdater \
-    ConnMetrics \
+    CarrierSetup \
+    CbrsNetworkMonitor \
     GoogleOneTimeInitializer \
-    GooglePartnerSetup \
     GoogleServicesFramework \
-    Phonesky \
-    PrebuiltGmsCoreQt \
-    SetupWizardPrebuilt \
-    TurboPrebuilt \
-    Velvet \
-    WallpaperPickerGoogleRelease \
-    WellbeingPrebuilt
+    grilservice \
+    RilConfigService \
+    StorageManagerGoogle
 
+# PrebuiltGmsCore
+PRODUCT_PACKAGES += \
+    PrebuiltGmsCoreRvc \
+    PrebuiltGmsCoreRvc_AdsDynamite \
+    PrebuiltGmsCoreRvc_CronetDynamite \
+    PrebuiltGmsCoreRvc_DynamiteLoader \
+    PrebuiltGmsCoreRvc_DynamiteModulesA \
+    PrebuiltGmsCoreRvc_DynamiteModulesC \
+    PrebuiltGmsCoreRvc_GoogleCertificates \
+    PrebuiltGmsCoreRvc_MapsDynamite \
+    PrebuiltGmsCoreRvc_MeasurementDynamite \
+    AndroidPlatformServices
+
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
+    librsjni
 
 PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://github.com/nift4/Mint-OS/raw/ota/gapps_{device}.json
 else
