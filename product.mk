@@ -67,12 +67,10 @@ PRODUCT_PACKAGES += \
     SoundAmplifierPrebuilt \
     SoundPickerPrebuilt \
     TrichromeLibrary \
-    TrichromeLibrary-Stub \
-    Tycho
+    TrichromeLibrary-Stub
 
 # product/priv-app
 PRODUCT_PACKAGES += \
-    AndroidAutoStubPrebuilt \
     AndroidMigratePrebuilt \
     AppDirectedSMSService \
     CarrierLocation \
