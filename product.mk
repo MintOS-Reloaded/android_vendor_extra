@@ -2,6 +2,10 @@
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.opa.eligible_device=true
 
+# Swipelibs
+PRODUCT_COPY_FILES += \
+    vendor/extra/libjni_latinimegoogle.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libjni_latinimegoogle.so
+
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
 
