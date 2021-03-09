@@ -63,7 +63,6 @@ PRODUCT_PACKAGES += \
     GoogleContactsSyncAdapter \
     MarkupGoogle \
     PixelThemesStub \
-    PrebuiltBugle \
     SoundAmplifierPrebuilt \
     SoundPickerPrebuilt \
     TrichromeLibrary \
@@ -89,6 +88,7 @@ PRODUCT_PACKAGES += \
     SafetyHubPrebuilt \
     ScribePrebuilt \
     SettingsIntelligenceGooglePrebuilt \
+    SettingsIntelligence \
     SetupWizardPrebuilt \
     TetheringEntitlement \
     TurboPrebuilt \
