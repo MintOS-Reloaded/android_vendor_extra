@@ -26,4 +26,8 @@ $(call inherit-product, vendor/gapps/config.mk)
 PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://github.com/nift4/Mint-OS/raw/ota/gapps_{device}.json
 else
 PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://github.com/nift4/Mint-OS/raw/ota/{device}.json
+
+# Hack
+PRODUCT_COPY_FILES += \
+    vendor/gapps/product/blobs/etc/permissions/com.android.omadm.service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.omadm.service.xml
 endif
