@@ -9,6 +9,10 @@ PRODUCT_COPY_FILES += \
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
 
+# StichImage
+PRODUCT_PACKAGES += \
+    StitchImage
+
 include vendor/extra/${device}.mk
 
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
