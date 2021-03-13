@@ -13,6 +13,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
 PRODUCT_PACKAGES += \
     StitchImage
 
+# Other stuff
+PRODUCT_COPY_FILES += \
+    vendor/extra/privapp-permissions-mint.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-mint.xml
+
 include vendor/extra/${device}.mk
 
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
