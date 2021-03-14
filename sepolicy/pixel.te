@@ -1,0 +1,42 @@
+# Normal platform_apps cannot access PowerHAL, so we need to define our own domain. Unfortunately
+# this means that TurboAdapter doesn't get the platform_app permissions any more, so we need to
+# list everything that it needs here.
+
+type turbo_adapter, domain, coredomain;
+
+app_domain(turbo_adapter)
+
+# To use ServiceManager
+allow turbo_adapter app_api_service:service_manager find;
+
+# To find and call hal_power_default so turbo can obtain the service extension (IPowerExt)
+allow turbo_adapter hal_power_service:service_manager find;
+
+type flipendo, domain, coredomain;
+app_domain(flipendo)
+
+# HwBinder IPC from client to flipendo
+binder_call(hal_power_client, flipendo)
+
+# HwBinder IPC from flipendo to statsd
+binder_call(flipendo, statsd)
+
+# HwBinder IPC from flipendo to gpuservice, and callbacks
+binder_call(gpuservice, flipendo)
+binder_call(flipendo, gpuservice)
+
+# HwBinder IPC from stats_service_server to flipendo, and callbacks
+binder_call(stats_service_server, flipendo)
+binder_call(flipendo, stats_service_server)
+
+# Allow flipendo to find app_api_service
+allow flipendo app_api_service:service_manager find;
+
+# Allow flipendo to find fwk_stats_hwservice
+allow flipendo fwk_stats_hwservice:hwservice_manager find;
+
+# Allow flipendo to find color_display_service
+allow flipendo color_display_service:service_manager find;
+
+# Allow flipendo to find hal_power_service
+allow flipendo hal_power_service:service_manager find; 
