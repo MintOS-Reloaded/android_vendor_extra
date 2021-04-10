@@ -31,9 +31,9 @@ endif
 
 ifeq (${WITH_GAPPS},true)
 $(call inherit-product, vendor/gapps/config.mk)
-PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://github.com/nift4/Mint-OS/raw/ota/gapps_{device}.json
+PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://github.com/nift4/Mint-OS/raw/ota/gapps_next_{device}.json
 else
-PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://github.com/nift4/Mint-OS/raw/ota/{device}.json
+PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://github.com/nift4/Mint-OS/raw/ota/next_{device}.json
 
 # Hack
 PRODUCT_COPY_FILES += \
