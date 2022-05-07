@@ -50,7 +50,7 @@ PRODUCT_PACKAGES += \
     SoundPickerPrebuilt \
     talkback \
     WebViewGoogle
-    
+
 # Product priv-app
 PRODUCT_PACKAGES += \
     AndroidMigratePrebuilt \
@@ -69,7 +69,7 @@ PRODUCT_PACKAGES += \
     WellbeingPrebuilt
 
 
-PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://github.com/nift4/Mint-OS/raw/ota/gapps_{device}.json
+PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://github.com/MintOS-Revived/ota_config/raw/Mint2_g/{device}.json
 else
-PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://github.com/nift4/Mint-OS/raw/ota/{device}.json
+PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://github.com/MintOS-Revived/ota_config/raw/Mint2/{device}.json
 endif
