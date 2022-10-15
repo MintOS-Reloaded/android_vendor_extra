@@ -5,18 +5,14 @@ PRODUCT_PROPERTY_OVERRIDES := \
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/extra/overlay
 
-include vendor/extra/${device}.mk
-
-ifeq (${WITH_GAPPS},true)
-ifeq ($(TARGET_GAPPS_ARCH),)
-$(error "GAPPS: TARGET_GAPPS_ARCH is undefined")
-endif
-
 ifneq ($(TARGET_GAPPS_ARCH),arm)
 ifneq ($(TARGET_GAPPS_ARCH),arm64)
 $(error "GAPPS: Only arm and arm64 are allowed")
+$(error "Has to be defined in vanilla builds as well")
 endif
 endif
+
+include vendor/extra/${TARGET_ARCH}.mk
 
 PRODUCT_PACKAGES += \
     com.google.android.maps
@@ -68,6 +64,12 @@ PRODUCT_PACKAGES += \
     WallpaperPickerGoogleRelease \
     WellbeingPrebuilt
 
+# Face Unlock
+PRODUCT_PACKAGES += \
+    FaceUnlockService
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.face.moto_unlock_service=true
 
 PRODUCT_PROPERTY_OVERRIDES += lineage.updater.uri=https://github.com/MintOS-Revived/ota_config/raw/Mint2_g/{device}.json
 else
