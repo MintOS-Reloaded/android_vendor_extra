@@ -1,2 +1,0 @@
-# GApps
-TARGET_GAPPS_ARCH := arm
